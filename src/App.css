@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header{
+  text-align: center;
+  font-family: 'Uchen', serif;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: black;
+  color: whitesmoke;
+  text-shadow: 1px 1px 4px #005a00c2;
+  padding: 10px;
+  transition: 0.5s all;
+}
+
+.header:hover{
+  font-size: 80px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.container{
+  text-align: center;
+}
+
+.heading{
+  padding-top: 20px;
+  font-size: 50px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: black;
+  background-color: whitesmoke;
+  transition: 0.5s all;
+}
+
+.heading:hover{
+  font-size: 100px;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.heading span{
+  font-weight: 600;
+}
+
+.searchBtn{
+  position:fixed;
+  left: 95%;
+  bottom: 20px;
+  height: 50px;
+  line-height: 38px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: orange;
+  transition: all 0.2s ease-in-out;
+}
+
+.searchBtn:hover{
+  background-color: yellowgreen;
+  border-radius: 30%;
+  font-size: 80px;
+}
+.searchBtn:active{
+  background: brown;
+}
+
+
+.searchcontainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 94vw;
+} 
+
+.backbtn{
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 2px 10px;
+}
+
+.searchBox{
+  width: 99%;
+  padding: 10px 60px;
+  font-size: 20px;
+  box-shadow: 0px 2px 6px maroon;
+  border: none;
+  outline: none;
+}
+
+.searchRes{
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+}
+
+.searchCount{
+  text-align: center;
+}
+.searchCount span{
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.bookSearchDislay{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100vw;
+}
+
+.books{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.books img{
+  margin: 10%;
+  width: 160px;
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.books:hover{
+  border: 5px double black;
+}
+
+.title{
+  margin: 0;
+  margin-top: -60px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5%;
+}
+
+.author{
+  font-size: 16px;
+  font-weight: bold;
+  color: grey;
+  margin-bottom: 10%;
+}
+
+select{
+  position: relative;
+  left: 170px;
+  bottom: 40px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: green;
+  background: green;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  cursor: pointer;
+}
+
+select:hover{
+  background-color: orange;
+  color: orange;
+}
+
+option{
+  background: white;
+  color: green;
+  font-size: 20px ;
+}
+
+.arrow{
+  position: relative;
+  color: white;
+  width: 10px;
+  height: 10px;
+  bottom: 85px;
+  font-weight: 800;
+  left: 189px;
+  z-index: 1;
+  pointer-events: none;
+}
+.bookDislay{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
